@@ -109,13 +109,142 @@
 
             // --- DATA & CONSTANTS ---
             const WORKOUT_REGIMEN = {
-                Monday: { name: "Full-Body Dumbbell", exercises: [ { name: "Goblet Squat", muscles: ["Quads", "Glutes"] }, { name: "Dumbbell Romanian Deadlift", muscles: ["Hamstrings", "Glutes"] }, { name: "Dumbbell Floor Press", muscles: ["Chest", "Triceps"] }, { name: "One-Arm Dumbbell Row", muscles: ["Back", "Biceps"] }, { name: "Dumbbell Overhead Press", muscles: ["Shoulders", "Triceps"] }, { name: "Dumbbell Lateral Raise", muscles: ["Shoulders"] }, { name: "Dumbbell Bicep Curl", muscles: ["Biceps"] }, { name: "Dumbbell Overhead Triceps Extension", muscles: ["Triceps"] } ] },
-                Tuesday: { name: "Smith/Cable Compound", exercises: [ { name: "Smith Machine Squat", muscles: ["Quads", "Glutes"] }, { name: "Smith Machine RDL", muscles: ["Hamstrings", "Glutes"] }, { name: "Smith Machine Bench Press", muscles: ["Chest", "Triceps"] }, { name: "Cable Lat Pulldown", muscles: ["Back", "Biceps"] }, { name: "Smith Machine OHP", muscles: ["Shoulders"] }, { name: "Seated Cable Row", muscles: ["Back"] }, { name: "Cable Lateral Raise", muscles: ["Shoulders"] }, { name: "Cable Biceps Curl", muscles: ["Biceps"] }, { name: "Cable Triceps Pushdown", muscles: ["Triceps"] } ] },
-                Wednesday: { name: "Full-Body Dumbbell Variation", exercises: [ { name: "Dumbbell Split Squat", muscles: ["Quads", "Glutes"] }, { name: "Single-Leg RDL", muscles: ["Hamstrings", "Glutes"] }, { name: "Dumbbell Incline Press", muscles: ["Chest", "Triceps"] }, { name: "Dumbbell Bent-Over Row", muscles: ["Back"] }, { name: "Dumbbell Arnold Press", muscles: ["Shoulders"] }, { name: "Dumbbell Front Raise", muscles: ["Shoulders"] }, { name: "Hammer Curl", muscles: ["Biceps"] }, { name: "Dumbbell Kickback", muscles: ["Triceps"] } ] },
-                Thursday: { name: "Smith/Cable Volume", exercises: [ { name: "Smith Machine Split Squat", muscles: ["Quads"] }, { name: "Smith Machine Hip Thrust", muscles: ["Glutes", "Hamstrings"] }, { name: "Cable Chest Fly", muscles: ["Chest"] }, { name: "Smith Machine Bent-Over Row", muscles: ["Back"] }, { name: "Cable Lateral Raise", muscles: ["Shoulders"] }, { name: "Cable Biceps Curl", muscles: ["Biceps"] }, { name: "Cable Overhead Triceps Extension", muscles: ["Triceps"] }, { name: "Cable Face Pull", muscles: ["Rear Delts", "Shoulders"] } ] },
-                Friday: { name: "Dumbbell Hypertrophy", exercises: [ { name: "Dumbbell Thrusters", muscles: ["Quads", "Glutes", "Shoulders"] }, { name: "Renegade Rows", muscles: ["Back", "Biceps", "Abs"] }, { name: "Sumo Goblet Squat", muscles: ["Quads", "Glutes"] } ] },
-                Saturday: { name: "Rest Day", exercises: [] },
-                Sunday: { name: "Rest Day", exercises: [] },
+                Monday: {
+                name: "Full-Body Dumbbell",
+                exercises: [{
+                  name: "Goblet Squat",
+                  muscles: ["Quads", "Glutes"]
+                }, {
+                  name: "Dumbbell Romanian Deadlift",
+                  muscles: ["Hamstrings", "Glutes"]
+                }, {
+                  name: "Dumbbell Floor Press",
+                  muscles: ["Chest", "Triceps"]
+                }, {
+                  name: "One-Arm Dumbbell Row",
+                  muscles: ["Back", "Biceps"]
+                }, {
+                  name: "Dumbbell Overhead Press",
+                  muscles: ["Shoulders", "Triceps"]
+                }, {
+                  name: "Dumbbell Lateral Raise",
+                  muscles: ["Shoulders"]
+                }, {
+                  name: "Dumbbell Bicep Curl",
+                  muscles: ["Biceps"]
+                }, {
+                  name: "Dumbbell Overhead Triceps Extension",
+                  muscles: ["Triceps"]
+                }, ],
+              },
+              Tuesday: {
+                name: "Smith/Cable Compound",
+                exercises: [{
+                  name: "Smith Machine Squat",
+                  muscles: ["Quads", "Glutes"]
+                }, {
+                  name: "Smith Machine RDL",
+                  muscles: ["Hamstrings", "Glutes"]
+                }, {
+                  name: "Smith Machine Bench Press",
+                  muscles: ["Chest", "Triceps"]
+                }, {
+                  name: "Cable Lat Pulldown",
+                  muscles: ["Back", "Biceps"]
+                }, {
+                  name: "Smith Machine OHP",
+                  muscles: ["Shoulders"]
+                }, {
+                  name: "Seated Cable Row",
+                  muscles: ["Back"]
+                }, {
+                  name: "Cable Lateral Raise",
+                  muscles: ["Shoulders"]
+                }, {
+                  name: "Cable Biceps Curl",
+                  muscles: ["Biceps"]
+                }, {
+                  name: "Cable Triceps Pushdown",
+                  muscles: ["Triceps"]
+                }, ],
+              },
+              Wednesday: {
+                name: "Full-Body Dumbbell Variation",
+                exercises: [{
+                  name: "Dumbbell Split Squat",
+                  muscles: ["Quads", "Glutes"]
+                }, {
+                  name: "Single-Leg RDL",
+                  muscles: ["Hamstrings", "Glutes"]
+                }, {
+                  name: "Dumbbell Incline Press",
+                  muscles: ["Chest", "Triceps"]
+                }, {
+                  name: "Dumbbell Bent-Over Row",
+                  muscles: ["Back"]
+                }, {
+                  name: "Dumbbell Arnold Press",
+                  muscles: ["Shoulders"]
+                }, {
+                  name: "Dumbbell Front Raise",
+                  muscles: ["Shoulders"]
+                }, {
+                  name: "Hammer Curl",
+                  muscles: ["Biceps"]
+                }, {
+                  name: "Dumbbell Kickback",
+                  muscles: ["Triceps"]
+                }, ],
+              },
+              Thursday: {
+                name: "Smith/Cable Volume",
+                exercises: [{
+                  name: "Smith Machine Split Squat",
+                  muscles: ["Quads"]
+                }, {
+                  name: "Smith Machine Hip Thrust",
+                  muscles: ["Glutes", "Hamstrings"]
+                }, {
+                  name: "Cable Chest Fly",
+                  muscles: ["Chest"]
+                }, {
+                  name: "Smith Machine Bent-Over Row",
+                  muscles: ["Back"]
+                }, {
+                  name: "Cable Lateral Raise",
+                  muscles: ["Shoulders"]
+                }, {
+                  name: "Cable Biceps Curl",
+                  muscles: ["Biceps"]
+                }, {
+                  name: "Cable Overhead Triceps Extension",
+                  muscles: ["Triceps"]
+                }, {
+                  name: "Cable Face Pull",
+                  muscles: ["Rear Delts", "Shoulders"]
+                }, ],
+              },
+              Friday: {
+                name: "Dumbbell Hypertrophy",
+                exercises: [{
+                  name: "Dumbbell Thrusters",
+                  muscles: ["Quads", "Glutes", "Shoulders"]
+                }, {
+                  name: "Renegade Rows",
+                  muscles: ["Back", "Biceps", "Abs"]
+                }, {
+                  name: "Sumo Goblet Squat",
+                  muscles: ["Quads", "Glutes"]
+                }, ],
+              },
+              Saturday: {
+                name: "Rest Day",
+                exercises: [],
+              },
+              Sunday: {
+                name: "Rest Day",
+                exercises: [],
+              },
             };
             const ALL_MUSCLE_GROUPS = ["Quads", "Glutes", "Hamstrings", "Chest", "Back", "Shoulders", "Biceps", "Triceps", "Abs", "Rear Delts"];
             const MUSCLE_GROUP_TARGETS = {
@@ -193,7 +322,7 @@
 
                 planContainer.innerHTML = '';
                 exerciseSelect.innerHTML = '';
-                
+
                 const title = document.createElement('h3');
                 title.className = "font-bold text-lg text-white mb-2";
                 title.textContent = `${today}: ${plan.name}`;
@@ -206,7 +335,7 @@
                         const item = document.createElement('li');
                         item.textContent = ex.name;
                         exerciseList.appendChild(item);
-                        
+
                         const option = document.createElement('option');
                         option.value = ex.name;
                         option.textContent = ex.name;
@@ -250,7 +379,7 @@
                     logList.innerHTML = `<p class="text-gray-400 text-center">No sets logged this week.</p>`;
                     return;
                 }
-                
+
                 [...weeklyData.sets].reverse().forEach((set, index) => {
                     const logEl = document.createElement('div');
                     logEl.className = 'bg-gray-800 p-2 rounded-md flex justify-between items-center text-sm';
@@ -264,7 +393,7 @@
                     logList.appendChild(logEl);
                 });
             };
-            
+
             const updateAllUI = () => {
                 renderTodaysWorkout();
                 renderVolumeSummary();
@@ -297,10 +426,10 @@
                         if (!weeklyData.volume[muscle]) weeklyData.volume[muscle] = 0;
                         weeklyData.volume[muscle]++;
                     });
-                    
+
                     saveData();
                     updateAllUI();
-                    
+
                     // Reset form for next entry
                     document.getElementById('weight').value = '';
                     document.getElementById('reps').value = '';
